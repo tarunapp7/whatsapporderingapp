@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: whatsapp-ordering-bot
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: MONGO_URI
+        value: your_mongodb_connection_string
+      - key: WHATSAPP_ACCESS_TOKEN
+        value: your_whatsapp_access_token
+      - key: WHATSAPP_PHONE_NUMBER_ID
+        value: your_whatsapp_phone_number_id
+      - key: RAZORPAY_KEY_ID
+        value: your_razorpay_key_id
+      - key: RAZORPAY_KEY_SECRET
+        value: your_razorpay_key_secret
+      - key: PORT
+        value: 10000
