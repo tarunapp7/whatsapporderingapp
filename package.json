@@ -1,15 +1,14 @@
 {
-  "name": "whatsapp-ordering-bot",
+  "name": "whatsapporderingapp",
   "version": "1.0.0",
-  "description": "WhatsApp ordering bot with product catalog, cart, UPI and COD",
+  "description": "WhatsApp Ordering Bot for Snacks and Sweets",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
+    "dotenv": "^16.0.3",
     "express": "^4.18.2",
-    "mongoose": "^7.0.5",
-    "body-parser": "^1.20.2",
-    "axios": "^1.4.0"
+    "mongoose": "^7.0.1"
   }
 }
